@@ -1,425 +1,403 @@
 <!doctype html>
 <html>
 
-<head>
-    <meta charset="UTF-8">
-    <title>sy</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-    <link href="css/mui.min.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="css/diy.css" />
-    <script src="js/resize.js" type="text/javascript" charset="utf-8"></script>
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<title>sy</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/diy.css" />
+		<script src="js/resize.js" type="text/javascript" charset="utf-8"></script>
+	</head>
 
-<body>
-    
-    <div id="" class="mui-content diy-wrap">
-    
-        <div class="col-xs-12 color-btn-wrap">
-            <ul class="color-btn">
-                <li style="margin-right: .1rem;">
-                    <button style="background-color: #fff;" type="button" class="mui-btn ">
+	<body>
+		<div id="" class="mui-content diy-wrap">
+			<div class="col-xs-12 color-btn-wrap">
+				<ul class="color-btn">
+					<li style="margin-right: .1rem;">
+						<button style="background-color: #fff;" type="button" class="mui-btn ">
                         <span class="mui-icon mui-icon-checkmarkempty"></span>
                     </button>
-                </li>
-                <li>
-                    <button style="background-color: #3155F9;" type="button" class="mui-btn ">
+					</li>
+					<li>
+						<button style="background-color: #3155F9;" type="button" class="mui-btn ">
                         <span class="mui-icon mui-icon-checkmarkempty"></span>
                     </button>
-                </li>
-                <li>
-                    <button style="background-color: #FF6A16;" type="button" class="mui-btn ">
+					</li>
+					<li>
+						<button style="background-color: #FF6A16;" type="button" class="mui-btn ">
                         <span class="mui-icon mui-icon-checkmarkempty"></span>
                     </button>
-                </li>
-                <li>
-                    <button style="background-color: #CE0D01;" type="button" class="mui-btn ">
+					</li>
+					<li>
+						<button style="background-color: #CE0D01;" type="button" class="mui-btn ">
                         <span class="mui-icon mui-icon-checkmarkempty"></span>
                     </button>
-                </li>
-                <li>
-                    <button style="background-color: #003406;" type="button" class="mui-btn ">
+					</li>
+					<li>
+						<button style="background-color: #003406;" type="button" class="mui-btn ">
                         <span class="mui-icon mui-icon-checkmarkempty"></span>
                     </button>
-                </li>
-                <li>
-                    <button style="background-color: #000000;" type="button" class="mui-btn ">
+					</li>
+					<li>
+						<button style="background-color: #000000;" type="button" class="mui-btn ">
                         <span class="mui-icon mui-icon-checkmarkempty"></span>
                     </button>
-                </li>
-            </ul>
-        </div>
-        <div class="diy-area">
-            <img class="diy-img" style="" src="images/blue.png" alt="" /> 
-            <div class="can">
-                <canvas id="edit-cvs"></canvas>
-            </div>
-        </div>
-       
-        <div class="mui-row diy-nav">
-            <div class="mui-col-sm-3 mui-col-xs-3">
-                <li class="mui-table-view-cell " id="picture-btn">
-                    <span class="mui-tab-item ">
+					</li>
+				</ul>
+			</div>
+			<div class="diy-area">
+				<img class="diy-img" style="" src="images/white.png" alt="" />
+				<div class="can">
+					<canvas id="edit-cvs"></canvas>
+				</div>
+			</div>
+			<div class="mui-row diy-nav">
+				<div class="mui-col-sm-3 mui-col-xs-3">
+					<li class="mui-table-view-cell " id="picture-btn">
+						<span class="mui-tab-item ">
                     <span class="mui-icon mui-icon-image"></span>
-                    <p class="mui-tab-label">插入图片</p>
-                    </span>
-                </li>
-            </div>
-            <div class="mui-col-sm-3 mui-col-xs-3">
-                <li class="mui-table-view-cell">
-                    <span class="mui-tab-item">
+						<p class="mui-tab-label">插入图片</p>
+						</span>
+					</li>
+				</div>
+				<div class="mui-col-sm-3 mui-col-xs-3" id="text-btn">
+					<li class="mui-table-view-cell">
+						<span class="mui-tab-item">
                     <span class="mui-icon mui-icon-compose"></span>
-                    <p class="mui-tab-label">插入文字</p>
-                    </span>
-                </li>
-            </div>
-            <div class="mui-col-sm-6 mui-col-xs-6 complate-btn">
-                <li class="mui-table-view-cell">
-                    <a class="mui-tab-item ">
-                        <span class="mui-icon mui-icon-checkmarkempty"></span> 完成设计
-                    </a>
-                </li>
-            </div>
-        </div>
-        <button id="delete-btn" type="button" class="mui-btn delete-btn"><span class="mui-icon mui-icon-trash"></span></button>
-        <!--编辑按钮 开始-->
-        <ul class="edit-btn">
-            <li style="margin-bottom: .1rem;">
-                <button type="button" class="mui-btn ">
+						<p class="mui-tab-label">插入文字</p>
+						</span>
+					</li>
+				</div>
+				<div class="mui-col-sm-6 mui-col-xs-6 complate-btn">
+					<li class="mui-table-view-cell">
+						<a class="mui-tab-item " href="diy-complete.html">
+							<span class="mui-icon mui-icon-checkmarkempty"></span> 完成设计
+						</a>
+					</li>
+				</div>
+			</div>
+			<button id="delete-btn" type="button" class="mui-btn delete-btn"><span class="mui-icon mui-icon-trash"></span></button>
+			<!--编辑按钮 开始-->
+			<ul class="edit-btn">
+				<li style="margin-bottom: .1rem;">
+					<button type="button" class="mui-btn ">
                     背
                 </button>
-            </li>
-            <li>
-                <button type="button" class="mui-btn scale-btn">
+				</li>
+				<li>
+					<button type="button" class="mui-btn scale-btn">
                     <span class="mui-icon mui-icon-plus fangda"></span>
                     <span style="display: none;" class="mui-icon mui-icon-minus suoxiao"></span>
                 </button>
-            </li>
-            <li>
-                <button type="button" class="mui-btn cls-styel-btn" style="border: 0;">
+				</li>
+				<li>
+					<button type="button" class="mui-btn cls-styel-btn" style="border: 0;">
                     <img style="width: 100%;margin-bottom: .035rem;" src="images/clothes.png" />
                 </button>
-            </li>
-            <li>
-                <button type="button" class="mui-btn open-filter" style="border: 0;">
+				</li>
+				<li>
+					<button type="button" class="mui-btn open-filter" style="border: 0;">
                     <img style="width: 100%;margin-bottom: .035rem;" src="images/text.png" />
                 </button>
-            </li>
-        </ul>
-        <!--编辑按钮 结束-->
-    </div>
-    <!--衣服款式选择 开始-->
-    <div id="cls-style" class="col-xs-12 cls-style mui-popover mui-popover-action mui-popover-bottom">
-        <div class="mui-row style-list">
-            <div class="mui-col-xs-4">
-                <button type="button" class="mui-btn mui-btn-primary mui-active">T恤</button>
-            </div>
-            <div class="mui-col-xs-4">
-                <button type="button" class="mui-btn mui-btn-primary ">POLO衫</button>
-            </div>
-            <div class="mui-col-xs-4">
-                <button type="button" class="mui-btn mui-btn-primary">卫衣</button>
-            </div>
-        </div>
-        <div class="mui-row gender-list">
-            <div class="mui-col-xs-4">
-                <button type="button" class="mui-btn mui-btn-primary mui-active">男款</button>
-            </div>
-            <div class="mui-col-xs-4">
-                <button type="button" class="mui-btn mui-btn-primary">女款</button>
-            </div>
-        </div>
-        <!--滑动选择衣服-->
-        <div class="mui-col-xs-12">
-            <div style="height: 1rem;" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
-                <div class="mui-scroll clothes-slider" style="height: .8rem;">
-                    <a class="mui-control-item mui-active pic-wrap">
-                        <span class="mui-icon mui-icon-checkmarkempty cls-selected"></span>
-                        <img style="height: 1rem;" src="images/white.png" />
-                    </a>
-                    <a class="mui-control-item pic-wrap">
-                        <span class="mui-icon mui-icon-checkmarkempty cls-selected"></span>
-                        <img style="height: 1rem;" src="images/white.png" />
-                    </a>
-                    <a class="mui-control-item pic-wrap">
-                        <span class="mui-icon mui-icon-checkmarkempty cls-selected"></span>
-                        <img style="height: 1rem;" src="images/white.png" />
-                    </a>
-                    <a class="mui-control-item pic-wrap">
-                        <span class="mui-icon mui-icon-checkmarkempty cls-selected"></span>
-                        <img style="height: 1rem;" src="images/white.png" />
-                    </a>
-                    <a class="mui-control-item pic-wrap">
-                        <span class="mui-icon mui-icon-checkmarkempty cls-selected"></span>
-                        <img style="height: 1rem;" src="images/white.png" />
-                    </a>
-                    <a class="mui-control-item pic-wrap">
-                        <span class="mui-icon mui-icon-checkmarkempty cls-selected"></span>
-                        <img style="height: 1rem;" src="images/white.png" />
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--衣服款式选择 结束-->
-    <!--插入照片 开始-->
-    <div id="picture" class="mui-popover mui-popover-action mui-popover-bottom">
-        <ul class="mui-table-view">
-            <li class="mui-table-view-cell">
-                <a href="#">相册</a>
-                <input class="get-pic" type="file" />
-            </li>
-            <li class="mui-table-view-cell">
-                <a href="#">相机</a>
-                <input class="get-pic" type="file" />
-            </li>
-        </ul>
-        <ul class="mui-table-view">
-            <li class="mui-table-view-cell cancel-btn">
-                <a href="#"><b>取消</b></a>
-            </li>
-        </ul>
-    </div>
-    <!--插入照片 结束-->
-    <!--滤镜和模板 开始-->
-    <div id="filter" class="mui-popover mui-popover-bottom mui-popover-action ">
-        <!--模板显示区 开始-->
-        <!-- <div class="show-muban" style="">
+				</li>
+			</ul>
+			<!--编辑按钮 结束-->
+		</div>
+		<!--衣服款式选择 开始-->
+		<div id="cls-style" class="col-xs-12 cls-style mui-popover mui-popover-action mui-popover-bottom">
+			<div class="mui-row style-list">
+				<div class="mui-col-xs-4">
+					<button type="button" class="mui-btn mui-btn-primary mui-active">T恤</button>
+				</div>
+				<div class="mui-col-xs-4">
+					<button type="button" class="mui-btn mui-btn-primary ">POLO衫</button>
+				</div>
+				<div class="mui-col-xs-4">
+					<button type="button" class="mui-btn mui-btn-primary">卫衣</button>
+				</div>
+			</div>
+			<div class="mui-row gender-list">
+				<div class="mui-col-xs-4">
+					<button type="button" class="mui-btn mui-btn-primary mui-active">男款</button>
+				</div>
+				<div class="mui-col-xs-4">
+					<button type="button" class="mui-btn mui-btn-primary">女款</button>
+				</div>
+			</div>
+			<!--滑动选择衣服-->
+			<div class="mui-col-xs-12">
+				<div style="height: 1rem;" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<div class="mui-scroll clothes-slider" style="height: .8rem;">
+						<a class="mui-control-item mui-active pic-wrap">
+							<span class="mui-icon mui-icon-checkmarkempty cls-selected"></span>
+							<img style="height: 1rem;" src="images/white.png" />
+						</a>
+						<a class="mui-control-item pic-wrap">
+							<span class="mui-icon mui-icon-checkmarkempty cls-selected"></span>
+							<img style="height: 1rem;" src="images/white.png" />
+						</a>
+						<a class="mui-control-item pic-wrap">
+							<span class="mui-icon mui-icon-checkmarkempty cls-selected"></span>
+							<img style="height: 1rem;" src="images/white.png" />
+						</a>
+						<a class="mui-control-item pic-wrap">
+							<span class="mui-icon mui-icon-checkmarkempty cls-selected"></span>
+							<img style="height: 1rem;" src="images/white.png" />
+						</a>
+						<a class="mui-control-item pic-wrap">
+							<span class="mui-icon mui-icon-checkmarkempty cls-selected"></span>
+							<img style="height: 1rem;" src="images/white.png" />
+						</a>
+						<a class="mui-control-item pic-wrap">
+							<span class="mui-icon mui-icon-checkmarkempty cls-selected"></span>
+							<img style="height: 1rem;" src="images/white.png" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--衣服款式选择 结束-->
+		<!--插入照片 开始-->
+		<div id="picture" class="mui-popover mui-popover-action mui-popover-bottom">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a href="#">相册</a>
+					<input class="get-pic" type="file" />
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="#">相机</a>
+					<input class="get-pic" type="file" />
+				</li>
+			</ul>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell cancel-btn">
+					<a href="#"><b>取消</b></a>
+				</li>
+			</ul>
+		</div>
+		<!--插入照片 结束-->
+		<!--滤镜和模板 开始-->
+		<div id="filter" class="mui-popover mui-popover-bottom mui-popover-action ">
+			<!--模板显示区 开始-->
+			<!-- <div class="show-muban" style="">
             <span class="mui-icon mui-icon-close muban-close"></span>
             <img src="images/u3143.png" />
         </div> -->
-        <!--模板显示区 结束-->
-        <!--模板内容 开始-->
-        <div class="mui-row muban-list">
-            <div class="mui-col-xs-3 mb-wrap">
-                <span class="mui-icon mui-icon-checkmarkempty filter-mb-selected"></span>
-                <img style="width: 100%;" src="images/u3143.png" />
-            </div>
-            <div class="mui-col-xs-3 mb-wrap">
-                <img style="width: 100%;" src="images/u3143.png" />
-            </div>
-            <div class="mui-col-xs-3 mb-wrap">
-                <img style="width: 100%;" src="images/u3143.png" />
-            </div>
-        </div>
-        <!--模板内容 结束-->
-        <!--  滤镜列表 开始-->
-        <div class="mui-row filter-list">
-            <div class="mui-col-xs-3 filter-img-wrap">
-                <div class="mui-col-xs-12 filter-wrap">
-                    <div class="filter-title">
-                        无
-                    </div>
-                </div>
-                <span class="mui-icon mui-icon-checkmarkempty filter-mb-selected"></span>
-                <img style="width: 100%;" src="images/u3143.png" />
-            </div>
-            <div class="mui-col-xs-3 filter-img-wrap">
-                <div class="mui-col-xs-12 filter-wrap">
-                    <div class="filter-title">
-                        LOMO
-                    </div>
-                </div>
-                <img style="width: 100%;" src="images/u3143.png" />
-            </div>
-            <div class="mui-col-xs-3 filter-img-wrap">
-                <div class="mui-col-xs-12 filter-wrap">
-                    <div class="filter-title">
-                        阴影
-                    </div>
-                </div>
-                <img style="width: 100%;" src="images/u3143.png" />
-            </div>
-            <div class="mui-col-xs-3 filter-img-wrap">
-                <div class="mui-col-xs-12 filter-wrap">
-                    <div class="filter-title">
-                        怀旧
-                    </div>
-                </div>
-                <img style="width: 100%;" src="images/u3143.png" />
-            </div>
-            <div class="mui-col-xs-3 filter-img-wrap">
-                <div class="mui-col-xs-12 filter-wrap">
-                    <div class="filter-title">
-                        冲印
-                    </div>
-                </div>
-                <img style="width: 100%;" src="images/u3143.png" />
-            </div>
-            <div class="mui-col-xs-3 filter-img-wrap">
-                <div class="mui-col-xs-12 filter-wrap">
-                    <div class="filter-title">
-                        岁月
-                    </div>
-                </div>
-                <img style="width: 100%;" src="images/u3143.png" />
-            </div>
-            <div class="mui-col-xs-3 filter-img-wrap">
-                <div class="mui-col-xs-12 filter-wrap">
-                    <div class="filter-title">
-                        黑白
-                    </div>
-                </div>
-                <img style="width: 100%;" src="images/u3143.png" />
-            </div>
-        </div>
-        <!--  滤镜列表 结束-->
-        <div class="mui-row filter-nav">
-            <div class="mui-col-xs-6 mui-col-sm-6 muban-btn ">
-                <li class="mui-table-view-cell ">
-                    <span class="mui-tab-item ">
+			<!--模板显示区 结束-->
+			<!--模板内容 开始-->
+			<div class="mui-row muban-list">
+				<div class="mui-col-xs-3 mb-wrap">
+					<span class="mui-icon mui-icon-checkmarkempty filter-mb-selected"></span>
+					<img style="width: 100%;" src="images/u3143.png" />
+				</div>
+				<div class="mui-col-xs-3 mb-wrap">
+					<img style="width: 100%;" src="images/u3143.png" />
+				</div>
+				<div class="mui-col-xs-3 mb-wrap">
+					<img style="width: 100%;" src="images/u3143.png" />
+				</div>
+			</div>
+			<!--模板内容 结束-->
+			<!--  滤镜列表 开始-->
+			<div class="mui-row filter-list">
+				<div class="mui-col-xs-3 filter-img-wrap">
+					<div class="mui-col-xs-12 filter-wrap">
+						<div class="filter-title">
+							无
+						</div>
+					</div>
+					<span class="mui-icon mui-icon-checkmarkempty filter-mb-selected"></span>
+					<img style="width: 100%;" src="images/u3143.png" />
+				</div>
+				<div class="mui-col-xs-3 filter-img-wrap">
+					<div class="mui-col-xs-12 filter-wrap">
+						<div class="filter-title">
+							LOMO
+						</div>
+					</div>
+					<img style="width: 100%;" src="images/u3143.png" />
+				</div>
+				<div class="mui-col-xs-3 filter-img-wrap">
+					<div class="mui-col-xs-12 filter-wrap">
+						<div class="filter-title">
+							阴影
+						</div>
+					</div>
+					<img style="width: 100%;" src="images/u3143.png" />
+				</div>
+				<div class="mui-col-xs-3 filter-img-wrap">
+					<div class="mui-col-xs-12 filter-wrap">
+						<div class="filter-title">
+							怀旧
+						</div>
+					</div>
+					<img style="width: 100%;" src="images/u3143.png" />
+				</div>
+				<div class="mui-col-xs-3 filter-img-wrap">
+					<div class="mui-col-xs-12 filter-wrap">
+						<div class="filter-title">
+							冲印
+						</div>
+					</div>
+					<img style="width: 100%;" src="images/u3143.png" />
+				</div>
+				<div class="mui-col-xs-3 filter-img-wrap">
+					<div class="mui-col-xs-12 filter-wrap">
+						<div class="filter-title">
+							岁月
+						</div>
+					</div>
+					<img style="width: 100%;" src="images/u3143.png" />
+				</div>
+				<div class="mui-col-xs-3 filter-img-wrap">
+					<div class="mui-col-xs-12 filter-wrap">
+						<div class="filter-title">
+							黑白
+						</div>
+					</div>
+					<img style="width: 100%;" src="images/u3143.png" />
+				</div>
+			</div>
+			<!--  滤镜列表 结束-->
+			<div class="mui-row filter-nav">
+				<div class="mui-col-xs-6 mui-col-sm-6 muban-btn ">
+					<li class="mui-table-view-cell ">
+						<span class="mui-tab-item ">
                     <span class="mui-icon mui-icon-list"></span>
-                    <p class="mui-tab-label">模板</p>
-                    </span>
-                </li>
-            </div>
-            <div class="mui-col-xs-6 mui-col-sm-6 filter-btn">
-                <li class="mui-table-view-cell ">
-                    <span class="mui-tab-item ">
+						<p class="mui-tab-label">模板</p>
+						</span>
+					</li>
+				</div>
+				<div class="mui-col-xs-6 mui-col-sm-6 filter-btn">
+					<li class="mui-table-view-cell ">
+						<span class="mui-tab-item ">
                     <span class="mui-icon mui-icon-settings"></span>
-                    <p class="mui-tab-label">滤镜</p>
-                    </span>
-                </li>
-            </div>
-        </div>
-    </div>
-    <!--滤镜和模板 结束-->
-    <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
-    <script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/fabric.min.js"></script>
-    <script type="text/javascript">
-    mui.init();
-    //默认第一个选中状态
-    $('.color-btn>li:first-child>button>span').show();
-    //图片数组
-    var srcArr = [
-        'images/white.png',
-        'images/blue.png',
-        'images/orange.png',
-        'images/red.png',
-        'images/white.png',
-        'images/orange.png'
-    ];
-//选择衣服颜色
-    mui('.color-btn').on('tap', 'button', function() {
-        /****选择颜色****/
+						<p class="mui-tab-label">滤镜</p>
+						</span>
+					</li>
+				</div>
+			</div>
+		</div>
+		<!--滤镜和模板 结束-->
+		<script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+		<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/fabric.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			//解决 所有a标签 导航不能跳转页面  
+			mui('body').on('tap', 'a', function() {
+				document.location.href = this.href;
+			});
+			//默认第一个选中状态
+			$('.color-btn>li:first-child>button>span').show();
+			//图片数组
+			var srcArr = [
+				'images/white.png',
+				'images/blue.png',
+				'images/orange.png',
+				'images/red.png',
+				'images/white.png',
+				'images/orange.png'
+			];
+			//选择衣服颜色
+			mui('.color-btn').on('tap', 'button', function() {
+				/****选择颜色****/
 
-        $(this).children('span').show();
-        $(this).parent().siblings().children().children('span').hide();
-        //点击按钮跟换对应图片地址
-        var index = $(this).parent('li').index();
-        $('.diy-img').attr('src', srcArr[index]);
+				$(this).children('span').show();
+				$(this).parent().siblings().children().children('span').hide();
+				//点击按钮跟换对应图片地址
+				var index = $(this).parent('li').index();
+				$('.diy-img').attr('src', srcArr[index]);
 
+			})
 
-    })
+			/***衣服款式 蒙层****/
 
-    /***衣服款式 蒙层****/
+			mui('.edit-btn').on('tap', 'button.cls-styel-btn', function() {
 
-    mui('.edit-btn').on('tap', 'button.cls-styel-btn', function() {
+				mui('#cls-style').popover('toggle');
 
-        mui('#cls-style').popover('toggle');
+			})
 
-    })
+			/***款式选择 ***/
+			mui('.style-list').on('tap', 'div', function() {
+				$(this).children('button').addClass('mui-active').parent('div').siblings().children().removeClass('mui-active');
+			})
+			mui('.gender-list').on('tap', 'div', function() {
+				$(this).children('button').addClass('mui-active').parent('div').siblings().children().removeClass('mui-active');
+			})
 
-    /***款式选择 ***/
-    mui('.style-list').on('tap', 'div', function() {
-        $(this).children('button').addClass('mui-active').parent('div').siblings().children().removeClass('mui-active');
-    })
-    mui('.gender-list').on('tap', 'div', function() {
-        $(this).children('button').addClass('mui-active').parent('div').siblings().children().removeClass('mui-active');
-    })
+			//插入图片
+			mui('.diy-nav').on('tap', '#picture-btn', function() {
+					mui('#picture').popover('toggle');
+				})
+				//取消插入图片
+			mui('#picture').on('tap', '.cancel-btn', function() {
+					mui('#picture').popover('toggle');
+				})
+				//删除diy
+			document.getElementById("delete-btn").addEventListener('tap', function() {
+				var btnArray = ['否', '是'];
+				mui.confirm('你确定要删除作品吗？', " ", btnArray, function(e) {
+					if(e.index == 1) {
+						console.log('是');
+					} else {
+						console.log('否');
+					}
+				})
+			});
+			//缩放
+			var onOff = true;
+			mui('.edit-btn').on('tap', '.scale-btn', function() {
 
-    //插入图片
-    mui('.diy-nav').on('tap', '#picture-btn', function() {
-            mui('#picture').popover('toggle');
-        })
-        //取消插入图片
-    mui('#picture').on('tap', '.cancel-btn', function() {
-            mui('#picture').popover('toggle');
-        })
-        //删除diy
-    document.getElementById("delete-btn").addEventListener('tap', function() {
-        var btnArray = ['否', '是'];
-        mui.confirm('你确定要删除作品吗？', " ", btnArray, function(e) {
-            if (e.index == 1) {
-                console.log('是');
-            } else {
-                console.log('否');
-            }
-        })
-    });
-    //缩放
-    var onOff = true;
-    mui('.edit-btn').on('tap', '.scale-btn', function() {
+				if(onOff) {
+					/*$('.diy-img').css({
+					    'transform':'scale(1.1,1.1)',
+					    'width':'100%'
+					});*/
+					$('.fangda').hide();
+					$('.suoxiao').show();
+					onOff = false;
+				} else {
+					/*$('.diy-img').css('transform','scale(1,1)');*/
+					$('.fangda').show();
+					$('.suoxiao').hide();
+					onOff = true;
+				}
+			})
+			mui('.edit-btn').on('tap', '.open-filter', function() {
+				mui('#filter').popover('toggle');
+			})
 
-        if (onOff) {
-            /*$('.diy-img').css({
-                'transform':'scale(1.1,1.1)',
-                'width':'100%'
-            });*/
-            $('.fangda').hide();
-            $('.suoxiao').show();
-            onOff = false;
-        } else {
-            /*$('.diy-img').css('transform','scale(1,1)');*/
-            $('.fangda').show();
-            $('.suoxiao').hide();
-            onOff = true;
-        }
-    })
-    mui('.edit-btn').on('tap', '.open-filter', function() {
-        mui('#filter').popover('toggle');
-    })
+			/*滤镜和模板 开始*/
+			mui('.filter-nav').on('tap', 'div', function() {
+				$(this).addClass('active').siblings().removeClass('active');
+			})
+			mui('.filter-nav').on('tap', '.muban-btn', function() {
+				$('.muban-list').show();
+				$('.filter-list').hide();
 
-    /*滤镜和模板 开始*/
-    mui('.filter-nav').on('tap', 'div', function() {
-        $(this).addClass('active').siblings().removeClass('active');
-    })
-    mui('.filter-nav').on('tap', '.muban-btn', function() {
-        $('.muban-list').show();
-        $('.filter-list').hide();
+			})
+			mui('.filter-nav').on('tap', '.filter-btn', function() {
+				$('.muban-list').hide();
+				$('.filter-list').show();
 
-    })
-    mui('.filter-nav').on('tap', '.filter-btn', function() {
-        $('.muban-list').hide();
-        $('.filter-list').show();
+			})
 
-    })
+			var canvas = new fabric.Canvas('edit-cvs');
 
-    var canvas = new fabric.Canvas('edit-cvs');
-    var text = new fabric.Text('入会费',{
+			mui('.diy-nav').on('tap', '#text-btn', function() {
+				var text = new fabric.Text('设友', {
 
-    });
-    canvas.add(text);
-    // /*  画布 开始*/
-    //     //将图片存进画布
-    // function convertImageToCanvas(img) {
-    //     var canvas = document.getElementById('wrap-cvs');
-    //     canvas.width = img.width;
-    //     canvas.height = img.height;
-    //     canvas.getContext('2d').drawImage(img,0,0);
-    //     return canvas;
-    // }
+				});
+				canvas.add(text);
+			})
 
-    
-    // //将画布保存为图片
-    // function convertCanvasToImage(canvas) {
-    //     var image = new Image();
-    //     image.src = canvas.toDataURL("image/png");
-    //     return image;
-    // }
-    /*var wrapCvs = document.getElementById('wrap-cvs');
-    var cxt = wrapCvs.getContext('2d');
-    var img = document.createElement('img');
-    img.setAttribute('class','diy-img');
-    img.src = 'images/white.png';
-    var diyWrap = $('.diy-wrap').get(0);
-    convertImageToCanvas(img);
-    var diyimg = convertCanvasToImage(wrapCvs);
-    diyimg.style.width = '100%';*/
-    
-    /*  画布 结束*/
+			// /*  画布 开始*/
 
-    </script>
-</body>
+			/*  画布 结束*/
+		</script>
+	</body>
 
 </html>

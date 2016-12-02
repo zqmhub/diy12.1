@@ -21,10 +21,25 @@ body {
 	top: 50%;
 	left: 50%;
 	transform:translate(-50%,-50%);
-	border: 1px solid #000;
 }
 .diy-img{
 	width: 100%;
+}
+.can{
+	position: absolute!important;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+	width: 1.5rem;
+	height: 2.5rem;
+}
+.can .canvas-container{
+	width: 1.5rem!important;
+	height: 2.5rem!important;
+}
+.can canvas{
+	width: 1.5rem!important;
+	height: 2.5rem!important;
 }
 /* .canvas-container{
 	position: absolute!important;
