@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>为作品命名</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script src="js/resize.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+
+		<form class="mui-input-group">
+			<div class="mui-input-row">
+				<label style="width: 30%;">作品名称</label>
+				<input style="width: 70%;" type="text" placeholder="请输入作品名称">
+			</div>
+
+		</form>
+		<div class="mui-row" style="2.2rem;background-color: #fff;margin-top: .1rem;padding: .1rem .1rem .1rem .15rem;position: relative;">
+			<div id="" class="mui-col-xs-3">
+				作品描述
+			</div>
+			<div class="mui-col-xs-9">
+				<textarea id="opus-story" name="opus" style="height: 1rem;" placeholder="给自己的左瓶加上华丽的描述呀"></textarea>
+			</div>
+			<a href="mark.html" class="mark-href" style="display:block;border: 2px solid #eaeaea;width: .4rem; height: .4rem;border-radius: 50%;position: absolute;left: 15%;bottom:20%;text-align: center;line-height: .4rem;color: #ccc;">
+				#
+			</a>
+			<p style="margin-bottom:0 ;text-align: right;"><span id="result"></span>/100</p>
+		</div>
+		
+	<button type="submit" class="mui-btn mui-btn-blue mui-btn-block submit-btn">提交</button>
+		<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			var length = 100;
+			$('#result').html(length-$('#opus-story').val().length)
+			mui('body').on('tap','a',function(){
+				document.location.href = this.href;
+			});
+			
+			$('#opus-story').keyup(function(){
+				
+				var content_len = $('#opus-story').val().length;
+				var in_len = length-content_len;
+				if(in_len>0){
+					$('#result').html(in_len);
+					$('.submit-btn').attr('disabled',false);
+				}else if(in_len = 0){
+					mui.alert('字数超出100','提示','确定',function (e) {
+					   e.index
+					},'div');
+					
+					$('.submit-btn').attr('disabled',true);
+					return false;
+					
+				}
+			})
+		</script>
+	</body>
+
+</html>
