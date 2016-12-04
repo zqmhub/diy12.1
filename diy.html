@@ -352,15 +352,18 @@
 			mui('.edit-btn').on('tap', '.scale-btn', function() {
 
 				if(onOff) {
-					/*$('.diy-img').css({
-					    'transform':'scale(1.1,1.1)',
-					    'width':'100%'
-					});*/
+					$('.diy-area').css({
+						
+						transform:'translate(-50%,-50%) scale(1.8)'
+					});
 					$('.fangda').hide();
 					$('.suoxiao').show();
 					onOff = false;
 				} else {
-					/*$('.diy-img').css('transform','scale(1,1)');*/
+					$('.diy-area').css({
+						
+						transform:'translate(-50%,-50%)'
+					});
 					$('.fangda').show();
 					$('.suoxiao').hide();
 					onOff = true;
